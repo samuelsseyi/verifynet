@@ -1,0 +1,36 @@
+body{
+  overflow-x: hidden;
+  margin: 0%;
+  padding: 0%;
+  background: radial-gradient(ellipse at bottom,  #004E8E 30%, #001327);
+  min-height: 100vh;
+}
+
+li{
+  margin-bottom: 10px !important;
+}
+
+.masterDiv {
+  height: 100vh;
+  align-items: center !important;
+  justify-content: center !important;
+  align-content: center !important;
+}
+
+.bottomBtn{
+  position: fixed;
+  bottom: 10px;
+  right: 0px;
+  margin: 10px;
+}
+
+.bottomBtn2{
+  position: fixed;
+  bottom: 10px;
+  margin: 10px;
+}
+/* Ui Verse Button Styling */
+
+.navBg{
+  background-color: #fafafa13;
+}
