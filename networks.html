@@ -16,20 +16,26 @@
       <a href="index.html">
         <img src="img/VerifyNet Logo (trans).png" class="col-5">
       </a>
-      <button class="btn btn-light animate__animated animate__pulse animate__infinite animate__slow	" onclick="dicoverNet()">Discover USSD Codes</button>
+      <button class="btn btn-sm btn-light mt-3  animate__animated animate__pulse animate__infinite animate__slow	" onclick="dicoverNet()">Discover USSD Codes</button>
     </div>
   </nav>
 
   <!-- The Body Section -->
-  <div class="container my-3 align-items-center">
-    <div class="card mx-auto shadow-lg col-10 col-md-4 rounded-4">
-      <img src="img/VerifyNet Logo.png" class="col-8 mx-auto rounded-5 mt-2 shadow-lg" alt="VerifyNet Logo">
+  <div class="container my-5 align-items-center">
+    <div class="card mx-auto shadow-lg col-10 col-md-4 rounded-4 py-4 trans">
+      <h5 class="card-title text-center my-3 ">Verify Network Provider</h5>
+      <div id="networkImageDiv" class="mx-auto text-center">
+        <img src="img/VerifyNet Logo.png" class="col-6 mx-auto rounded-3 mt-2 shadow-lg" alt="VerifyNet Logo" id="networkImg">
+      </div>
       <div class="card-body">
-        <h5 class="card-title text-center my-3 ">Verify Network Provider</h5>
-        <p class="card-text">Use this tool to verify the network provider associated with a phone number. Do not include the country code before entering the number. </p>
-        <label for="phNum" class="mt-2">Enter Number Here</label>
-        <input type="text" placeholder="eg: 09025254447" id="phNum" class="form-control shadow-lg mb-4" >
-        <a href="#" class="btn btn-primary">Verify</a>
+        <div id="networkDiv" class="bg-primary text-light text-center rounded-3 my-3 p-2 fs-5 animate__animated animate__pulse animate__infinite animate__slower	1s" style="display: none;">Network Display</div>
+        <p class="card-text">Use this tool to verify the network provider associated with a phone number. Do not include the country code before the number. </p>
+        <div id="errorDiv" class="bg-danger text-light text-center rounded-3 my-1 fs-5 animate__animated animate__headShake animate__infinite" style="display: none;">Error Display</div>
+
+        
+        <label for="phNum" class="my-2">Enter Number Here</label>
+        <input type="number" placeholder="eg: 09025254447" id="phNum" class="form-control shadow-lg mb-4" >
+        <button class="btn btn-primary" onclick="verifyNum()">Verify</button>
       </div>
     </div>
   </div>

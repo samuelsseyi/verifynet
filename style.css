@@ -29,8 +29,19 @@ li{
   bottom: 10px;
   margin: 10px;
 }
-/* Ui Verse Button Styling */
 
 .navBg{
   background-color: #fafafa13;
+}
+
+
+/* Verify network With Phone Number Styling */
+#networkImg:hover{
+  transform: scale(1.02);
+  transition: ease-in-out;
+  transition-duration: 1.5s;
+}
+
+.trans{
+  background-color: rgba(255, 255, 255, 0.493) !important;
 }
