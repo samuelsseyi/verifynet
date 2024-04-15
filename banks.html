@@ -20,6 +20,26 @@
   </nav>
   
 
+  <!-- The Body Section -->
+  <div class="container my-5 align-items-center">
+    <div class="card mx-auto shadow-lg col-10 col-md-4 rounded-4 py-4 trans">
+      <h5 class="card-title text-center my-3 ">Verify Bank Account</h5>
+      <div id="networkImageDiv" class="mx-auto text-center">
+        <img src="img/VerifyNet Logo.png" class="col-6 mx-auto rounded-3 mt-2 shadow-lg" alt="VerifyNet Logo" id="networkImg">
+      </div>
+      <div class="card-body">
+        <div id="networkDiv" class="bg-primary text-light text-center rounded-3 my-3 p-2 fs-5 animate__animated animate__pulse animate__infinite animate__slower	1s" style="display: none;">Network Display</div>
+        <p class="card-text">Use this tool to verify banks and username associated with a bank account number.</p>
+        <div id="errorDiv" class="bg-danger text-light text-center rounded-3 my-1 fs-5 animate__animated animate__headShake animate__infinite" style="display: none;">Error Display</div>
+
+        
+        <label for="phNum" class="my-2">Enter Account Number Here</label>
+        <input type="number" placeholder="eg: 0106750231" id="phNum" class="form-control shadow-lg mb-4" >
+        <button class="btn btn-primary" onclick="verifyBank()">Verify Details</button>
+      </div>
+    </div>
+  </div>
+
 
   <button class="btn btn-light bottomBtn2" onclick="backBtn()">Back to Home</button>
   <script src="script.js"></script>

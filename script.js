@@ -2,9 +2,6 @@ const backBtn = ()=>{
   location.replace("index.html");
 }
 
-const dicoverNet = ()=>{
-  location.replace("networkcodes.html");
-}
 
 // JavaScript Code For Network Provider Verification
 
