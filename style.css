@@ -6,12 +6,16 @@ body{
   min-height: 100vh;
 }
 
+a{
+  text-decoration: none !important;
+}
+
 li{
   margin-bottom: 10px !important;
 }
 
 .masterDiv {
-  height: 100vh;
+  min-height: 100vh;
   align-items: center !important;
   justify-content: center !important;
   align-content: center !important;
@@ -27,6 +31,7 @@ li{
 .bottomBtn2{
   position: fixed;
   bottom: 10px;
+  left: 0px;
   margin: 10px;
 }
 

@@ -21,7 +21,7 @@ const verifyNum = () =>{
     document.getElementById("phNum").style.borderColor = "red"
     document.getElementById("networkDiv").style.display = "none"
     document.getElementById("errorDiv").style.display = "block"
-    errorDiv.innerHTML = "Invalid Phone Number"
+    errorDiv.innerHTML = "Invalid Phone Number Entry"
     setTimeout(()=>{
       document.getElementById("errorDiv").style.display = "none"
     }, 3000)
